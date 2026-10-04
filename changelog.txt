@@ -1,0 +1,10 @@
+---------------------------------------------------------------------------------------------------
+Version: 0.1.0
+Date: 2026-10-03
+  Features:
+    - Per-player continuous electric coverage during native manual pole dragging.
+    - Configurable keyboard control and toggled shortcut, English and French locale.
+    - Prototype and quality aware square coverage, cable reach and native placement checks.
+    - Bounded obstacle backoff and explicit fallback for unsupported placement modes.
+  Changes:
+    - No permanent tick handler, item proxies or changes to existing pole prototypes.

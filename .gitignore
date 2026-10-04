@@ -1,0 +1,10 @@
+dist/
+__pycache__/
+*.pyc
+
+# Local publication/session captures and credentials do not belong in Git.
+publication/portal-*.jpg
+publication/*session*
+.env
+.env.*
+*.log
