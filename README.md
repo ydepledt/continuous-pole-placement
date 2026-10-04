@@ -97,6 +97,14 @@ Les tests purs nécessitent Lua 5.2 ou plus récent. La création de l'archive n
 
 La version 0.1.0 publiée sur le portail correspond au code Lua initial. Les modifications de documentation et les liens GitHub ne nécessitent pas de nouvelle version du mod.
 
+La description publique est conservée dans `PORTAL.md`. Pour prévisualiser sa synchronisation et le lien vers les sources :
+
+```sh
+python tools/update_portal.py --source-url https://github.com/ydepledt/continuous-pole-placement
+```
+
+L'envoi effectif exige `--apply` et une clé Factorio disposant du droit **ModPortal: Edit Mods**, fournie par la variable d'environnement `MOD_EDIT_API_KEY` ou par `--api-key-file` avec un fichier local externe au dépôt. L'outil ne publie pas de nouvelle archive et ne modifie ni la catégorie ni la licence. Ne jamais ajouter une clé API aux fichiers suivis par Git.
+
 ## Sources API
 
 - [ElectricPolePrototype](https://lua-api.factorio.com/2.0.77/prototypes/ElectricPolePrototype.html)
